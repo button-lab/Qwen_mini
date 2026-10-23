@@ -104,24 +104,3 @@ Export as standalone merged model:
 ```bash
 python merge_lora.py --adapter_dir outputs/qwen-chat-v1 --merged_out outputs/qwen-chat-v1-merged
 ```
-
-## Suggested GitHub Upload Scope
-
-Upload:
-
-- all `.py` scripts
-- `eval_prompts.jsonl`
-- `.gitignore`
-- `README.md`
-
-Do not upload:
-
-- large model weights in `outputs/`
-- large raw datasets
-- local debug logs/cache files
-
-## Notes
-
-- You may see HF warning about unauthenticated requests; set `HF_TOKEN` for faster downloads/rate limits.
-- On Windows, warnings related to `torch.distributed` redirects are usually non-blocking for this workflow.
-
