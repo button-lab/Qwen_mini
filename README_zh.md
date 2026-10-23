@@ -104,25 +104,3 @@ python score_eval.py --in_file eval_results.jsonl --out_file eval_scores.jsonl -
 ```bash
 python merge_lora.py --adapter_dir outputs/qwen-chat-v1 --merged_out outputs/qwen-chat-v1-merged
 ```
-
-## GitHub 上传建议
-
-建议上传：
-
-- 全部 `.py` 脚本
-- `eval_prompts.jsonl`
-- `.gitignore`
-- `README.md`
-- `README_zh.md`
-
-不建议上传：
-
-- `outputs/` 下大模型权重
-- 超大原始数据文件
-- 本地调试日志与缓存文件
-
-## 说明
-
-- 若看到 HF 未登录警告（unauthenticated requests），配置 `HF_TOKEN` 可提升下载速率与限额。
-- Windows 下 `torch.distributed` 的 redirect 提示通常不影响本流程。
-
